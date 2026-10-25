@@ -5,7 +5,8 @@
 
 ## ทดลองบน Windows
 
-ดาวน์โหลด ZIP จากหน้า [Releases](https://github.com/DaybreakList/VR-Thammasat-University-Engineering-Faculty-Tour/releases)
+ดาวน์โหลด [Windows x64 Prototype ZIP](https://github.com/DaybreakList/VR-Thammasat-University-Engineering-Faculty-Tour/releases/download/prototype-windows-2026-10-25/VR_TSE_Virtual_Tour_Windows_x64_2026-10-25.zip)
+หรือดูรายละเอียดและ checksum ที่หน้า [Release](https://github.com/DaybreakList/VR-Thammasat-University-Engineering-Faculty-Tour/releases/tag/prototype-windows-2026-10-25)
 แตกไฟล์ทั้งหมดไว้ในโฟลเดอร์เดียวกัน แล้วเปิด `VR_TSE_Virtual_Tour.exe`
 ไม่ต้องติดตั้ง Unity เพื่อทดลองเล่น และต้องเก็บโฟลเดอร์ `_Data` กับไฟล์ DLL ที่แนบไว้คู่กับ EXE
 อ่านวิธีควบคุมเพิ่มเติมใน [คู่มือทดลอง](Docs/TESTING.md) กด `Alt+F4` เพื่อออก

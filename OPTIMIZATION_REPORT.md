@@ -1,5 +1,12 @@
 # Prototype performance pass — 2026-10-25
 
+Distribution update: a fresh Windows x86-64 build of source commit 9d34fa4
+succeeded with Errors: 0 on 2026-10-25. A non-interactive startup smoke test
+loaded the scene and remained running without fatal/managed exceptions in its
+log. The ZIP and checksum are available in GitHub Release
+`prototype-windows-2026-10-25`. References below to older builds describe the
+state before this distribution update; headset profiling remains pending.
+
 Target: Pico 4 first, with Windows simulator support retained. This is a source
 and configuration optimization pass, not a measured headset FPS certification.
 
