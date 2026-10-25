@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ad9eb92c3f9d74d9caa4759c0eee6a, type: 3}
+  m_Name: P07_Room302
+  m_EditorClassIdentifier: Assembly-CSharp::VRTSE.Tour.TourNodeData
+  nodeId: P07
+  displayName: In front of Room 302
+  panoramaMaterial: {fileID: 2100000, guid: f701f8eb88c09324191b52401b4655c3, type: 2}
+  initialYaw: -20
+  mapPosition: {x: 0.62, y: 0.8}
+  outgoingLinks:
+  - label: Go to P08
+    targetNode: {fileID: 11400000, guid: b17ec7a9100044f0b000000000000009, type: 2}
+    localDirection: {x: -1, y: 0, z: 0}
+  - label: Go to P06
+    targetNode: {fileID: 11400000, guid: b17ec7a9100044f0b000000000000008, type: 2}
+    localDirection: {x: 1, y: 0, z: 0}

@@ -1,0 +1,38 @@
+# Unity regenerates these directories.
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/MemoryCaptures/
+**/Recordings/
+**/.vs/
+**/.idea/
+**/.vscode/
+**/Assets/_Recovery/
+**/Assets/_Recovery.meta
+*.csproj
+*.sln
+*.slnx
+*.user
+*.suo
+*.pidb
+*.opendb
+*.VC.db
+.DS_Store
+Thumbs.db
+# Local tools, session markers and credentials.
+/Tools/
+/Temp/
+/Publishing/
+/SESSION_SAVE_STATUS.txt
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+# Do not ignore DLL/SO/AAR/APK globally: the embedded PICO SDK includes these.

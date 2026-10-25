@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ad9eb92c3f9d74d9caa4759c0eee6a, type: 3}
+  m_Name: P09_Information
+  m_EditorClassIdentifier: Assembly-CSharp::VRTSE.Tour.TourNodeData
+  nodeId: P09
+  displayName: Information Point
+  panoramaMaterial: {fileID: 2100000, guid: fcd7e868e64eab749909e5fb3e0497d9, type: 2}
+  initialYaw: 90
+  mapPosition: {x: 0.12, y: 0.8}
+  outgoingLinks:
+  - label: Go to P10
+    targetNode: {fileID: 11400000, guid: b17ec7a9100044f0b00000000000000a, type: 2}
+    localDirection: {x: 0, y: 0, z: -1}
+  - label: Go to P08
+    targetNode: {fileID: 11400000, guid: b17ec7a9100044f0b000000000000009, type: 2}
+    localDirection: {x: 1, y: 0, z: 0}

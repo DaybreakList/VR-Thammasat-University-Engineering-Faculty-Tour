@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ad9eb92c3f9d74d9caa4759c0eee6a, type: 3}
+  m_Name: P03_NorthCorridor
+  m_EditorClassIdentifier: Assembly-CSharp::VRTSE.Tour.TourNodeData
+  nodeId: P03
+  displayName: South Walkway
+  panoramaMaterial: {fileID: 2100000, guid: 8bb0c18bf44e8d747ae395466adeef61, type: 2}
+  initialYaw: 0
+  mapPosition: {x: 0.62, y: 0.2}
+  outgoingLinks:
+  - label: Go to P04
+    targetNode: {fileID: 11400000, guid: cff506d7b0b26064ebf8b674663bbbe0, type: 2}
+    localDirection: {x: 1, y: 0, z: 0}
+  - label: Go to P02
+    targetNode: {fileID: 11400000, guid: f57633cdb1daefc4e944c7abba565678, type: 2}
+    localDirection: {x: -1, y: 0, z: 0}
