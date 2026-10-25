@@ -9,6 +9,10 @@ CompositionLayerManager.TryGetLayerId instead of obsolete GetInstanceID.
 Both samples wait for a registered layer and a valid Android surface before
 calling the corresponding enterprise API.
 
+2026-10-25: Restricted PlatformPreprocessor App ID validation to Android and
+made the optional appID read null-safe. Desktop simulator builds do not require
+a PICO Platform App ID. Unconfigured Android builds still receive a warning.
+
 This embedded package takes precedence over the Git dependency in manifest.json.
 Keep this folder in source control to preserve the fix on other computers.
 When upgrading the SDK, review whether the upstream version includes this fix.

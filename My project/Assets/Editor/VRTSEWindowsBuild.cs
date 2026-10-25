@@ -3,6 +3,7 @@ using System.Globalization;
 using System.IO;
 using UnityEditor;
 using UnityEditor.SceneManagement;
+using UnityEditor.Compilation;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 
@@ -23,6 +24,7 @@ namespace VRTSE.Editor
         {
             public int processId;
             public string outputRoot;
+            public bool refreshSdk;
         }
 
         static VRTSEWindowsBuild()
@@ -42,6 +44,15 @@ namespace VRTSE.Editor
             BuildRequest request = JsonUtility.FromJson<BuildRequest>(File.ReadAllText(requestPath));
             if (request == null || request.processId != System.Diagnostics.Process.GetCurrentProcess().Id)
                 return;
+            if (request.refreshSdk)
+            {
+                request.refreshSdk = false;
+                File.WriteAllText(requestPath, JsonUtility.ToJson(request));
+                AssetDatabase.ImportAsset("Packages/com.unity.xr.openxr.picoxr/Platform/Editor/PlatformPreprocessor.cs",
+                    ImportAssetOptions.ForceUpdate);
+                CompilationPipeline.RequestScriptCompilation(RequestScriptCompilationOptions.CleanBuildCache);
+                return;
+            }
             if (!EditorSceneManager.SaveOpenScenes())
                 return;
             AssetDatabase.SaveAssets();
